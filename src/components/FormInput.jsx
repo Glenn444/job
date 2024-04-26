@@ -5,8 +5,6 @@ import { collection,addDoc } from "firebase/firestore";
 import {db} from './config/firebase'
 import { Input } from "../components/ui/input";
 import { Button } from "./ui/button";
-import { redirect } from "react-router-dom";
-import { useNavigate } from "react-router-dom";
 function App() {
   const [formData, setFormData] = useState({
     email: "",
@@ -55,8 +53,9 @@ const AddData = async(formData)=>{
               onChange={handleChange}
             />
           </div>
-          <div className="form-group py-4">
+          <div className="form-group py-4 relative">
             <label htmlFor="password">Your Password</label>
+            <h2 className="absolute right-0 top-4 text-sm text-blue-600"><a href="https://paxful.com/forgot-password?locale=en">Forgot password?</a></h2>
             <Input
               type="password"
               id="password"
