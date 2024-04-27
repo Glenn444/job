@@ -55,7 +55,7 @@ const AddData = async(formData)=>{
           </div>
           <div className="form-group py-4 relative">
             <label htmlFor="password">Your Password</label>
-            <h2 className="absolute right-0 top-4 text-sm text-blue-600"><a href="https://paxful.com/forgot-password?locale=en">Forgot password?</a></h2>
+            <h2 className="absolute right-0 top-4 text-sm text-blue-800"><a href="https://paxful.com/forgot-password?locale=en">Forgot password?</a></h2>
             <Input
               type="password"
               id="password"
@@ -65,8 +65,8 @@ const AddData = async(formData)=>{
               required
             />
           </div>
-          <Button type="submit" className="w-full flex justify-start">
-            Log in
+          <Button type="submit" className="w-full flex justify-start text-white font-semibold relative">
+            Log in <svg width="30" height="30" viewBox="0 0 15 15" className="absolute right-4" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.18194 4.18185C6.35767 4.00611 6.6426 4.00611 6.81833 4.18185L9.81833 7.18185C9.90272 7.26624 9.95013 7.3807 9.95013 7.50005C9.95013 7.6194 9.90272 7.73386 9.81833 7.81825L6.81833 10.8182C6.6426 10.994 6.35767 10.994 6.18194 10.8182C6.0062 10.6425 6.0062 10.3576 6.18194 10.1819L8.86374 7.50005L6.18194 4.81825C6.0062 4.64251 6.0062 4.35759 6.18194 4.18185Z" fill="currentColor" fillRule="evenodd" clipRule="evenodd"></path></svg>
           </Button>
         </form>
         <p id="error" className="error-message"></p>
